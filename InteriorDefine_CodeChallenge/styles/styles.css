@@ -1,0 +1,134 @@
+html, body{min-height:100%;}
+body{
+    height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+}
+h1 {
+    color: #DC6666;
+    font-size: 42px;
+    line-height: 1.25;
+    margin: 0;
+}
+h2 {
+    color: #676564;
+    font-size: 17px;
+    line-height: 1.2;
+    margin: 0 auto;
+    width: 300px;
+}
+h3 {
+    color: #676564;
+    font-size: 15px;
+    line-height: 1.7;
+    margin: 0;
+}
+h4 {
+    color: #676564;
+    font-size: 17px;
+    line-height: 1.3;
+    margin: 0;
+}
+h5 {
+    color: #676564;
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+}
+button {
+    color: #F7F5F2;
+    background-color: #DC6666;
+    font-size: 17px;
+    border: none;
+    border-radius: 30px;
+    padding: 19px 37px;
+    margin-top: 30px;
+}
+img#arrow {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+img#arrow-reverse {
+    margin-right: 15px;
+    vertical-align: middle;
+}
+#cc-wrapper {
+    display: grid;
+    position: relative
+}
+#cc-background {
+    height: 100%;
+    width: 1440px;
+    max-height: 643px;
+    -webkit-mask-image: -webkit-gradient(linear, left 40%, left top, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    z-index: -1;
+
+}
+#cc-content {
+    position: fixed;
+    width: 335px;
+    bottom: 365px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80px;
+}
+#drag-watermark {
+    position: fixed;
+    bottom: 15px;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#draggable-wrapper {
+    position: absolute;
+    width: 1156px;
+}
+/* desktop */
+
+@media (min-width: 900px) {
+    #cc-background {
+        height: 100%;
+        max-height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        margin: auto;
+    }
+    #cc-content {
+        width: unset;
+        bottom: unset;
+        text-align: left;
+        left: 10%;
+        top: 80px;
+        transform: translateX(0%);
+    }
+    h2.cc-subtitle {
+        width: max-content;
+    }
+    h1 {
+        font-size: 80px;
+        line-height: 1.25
+    }
+    h2 {
+        font-size: 22px;
+        line-height: 1.4
+    }
+    h3 {
+        font-size: 18px;
+        line-height: 1.7;
+    }
+    #drag-watermark {
+        display: none;
+    }
+}
+@media (min-width: 1440px) {
+    #cc-wrapper {
+        width: 100%;
+    }
+}

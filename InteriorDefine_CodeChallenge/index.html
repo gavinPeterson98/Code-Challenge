@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles/styles.css">
+        <link rel="stylesheet" href="styles/modal.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet"> 
+    </head>
+    <body>
+        <div id="draggable-wrapper"></div>
+            <div id="cc-wrapper">
+                <div id="cc-content">
+                    <h1 id="cc-title">the refresh sale</h1>
+                    <h2 class="cc-subtitle">15% off sitewide to recharge your living space. Ends Friday, 2/19</h2>
+                    <h3 class="cc-subtitle">15+ collections, 100+ fabrics, 20+ legs</h3>
+                    <button><span>Start customizing</span><img id="arrow" src="images/Arrow.png"/></button>
+                </div>
+                <div id="modal-tags-wrapper">
+                    <div class="modal-tag" id="tag-1">
+                        <img class="tag-icon" src="images/Shape.png">
+                        <img class="tag-icon-light" src="images/Icon-Light.png">
+                        <div id="modal-1" class="modal"  style="display: none;">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="box1-wrapper">
+                                    <h4>Jason Wu Chair</h4>
+                                    <h5>Performance Velvet Rust</h5>
+                                </div>
+                                <button>Shop Now</button>
+                                <div class="modal-shopAll-btn"><h5>Shop All Chairs</h5><img id="arrow" src="images/Arrow-Dark.png"/></div>
+                                <div class="grid-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-tag" id="tag-2">
+                        <img class="tag-icon" src="images/Shape.png">
+                        <img class="tag-icon-light" src="images/Icon-Light.png">
+                        <div id="modal-2" class="modal" style="display: none;">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="box1-wrapper">
+                                    <h4>Sloan Sectional</h4>
+                                    <h5>Vintage Plush Pewter</h5>
+                                </div>
+                                <button>Shop Now</button>
+                                <div class="modal-shopAll-btn"><h5>Shop All Sectional</h5><img id="arrow" src="images/Arrow-Dark.png"/></div>
+                                <div class="grid-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-tag" id="tag-3">
+                        <img class="tag-icon" src="images/Shape.png">
+                        <img class="tag-icon-light" src="images/Icon-Light.png">
+                        <div id="modal-3" class="modal"  style="display: none;">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="box1-wrapper">
+                                    <h4>Brooks Coffee Table</h4>
+                                    <h5>White Wash Oak</h5>
+                                </div>
+                                <button>Shop Now</button>
+                                <div class="modal-shopAll-btn"><h5>Shop All Tables</h5><img id="arrow" src="images/Arrow-Dark.png"/></div>
+                                <div class="grid-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-tag" id="tag-4">
+                        <img class="tag-icon" src="images/Shape.png">
+                        <img class="tag-icon-light" src="images/Icon-Light.png">
+                        <div id="modal-4" class="modal"  style="display: none;">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="box1-wrapper">
+                                    <h4>Reese Side Table</h4>
+                                    <h5>Painted Black</h5>
+                                </div>
+                                <button>Shop Now</button>
+                                <div class="modal-shopAll-btn"><h5>Shop All Tables</h5><img id="arrow" src="images/Arrow-Dark.png"/></div>
+                                <div class="grid-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-tag" id="tag-5">
+                        <img class="tag-icon" src="images/Shape.png">
+                        <img class="tag-icon-light" src="images/Icon-Light.png">
+                        <div id="modal-5" class="modal"  style="display: none;">
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="box1-wrapper">
+                                    <h4>Payton</h4>
+                                    <h5>Hand Knotted Rug</h5>
+                                </div>
+                                <button>Shop Now</button>
+                                <div class="modal-shopAll-btn"><h5>Shop All Rugs</h5><img id="arrow" src="images/Arrow-Dark.png"/></div>
+                                <div class="grid-spacer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img id="cc-background" src="images/id_sloan-chaise_basichero_r1_ADJ.jpg" />
+                <p id="drag-watermark">
+                    <img id="arrow-reverse" src="images/Arrow-Reverse.png"/>
+                    Drag to Explore
+                    <img id="arrow" src="images/Arrow.png"/>
+                </p>
+            </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/draggable.js"></script>
+</html>

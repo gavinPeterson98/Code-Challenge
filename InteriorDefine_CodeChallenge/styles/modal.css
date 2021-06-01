@@ -1,0 +1,103 @@
+.modal {
+  display: none; /* Hidden by default */
+  position: absolute; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 50px;
+  top: -80%;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+}
+.modal#modal-4 {
+  left: -340px;
+}
+  /* Modal Content */
+.modal-content {
+  color: #676564;
+  background-color: #fff;
+  width: 280px;
+  height: 116px;
+  border-radius: 5px;
+  padding: 0px 20px;
+  display: grid;
+  grid-template-columns: 180px 100px;
+  grid-template-rows: 70px 45px;
+}
+.box1-wrapper {
+  margin: auto;
+  margin-left: 0;
+}
+.modal-content button {
+  font-size: 13px;
+  line-height: 1.4;
+  border-radius: 5px;
+  padding: 8px 14px;
+  margin: auto;
+}
+.modal-shopAll-btn {
+  display: flex;
+  align-items: center;
+}
+.modal-shopAll-btn,
+.grid-spacer {
+  border-top: 1px solid #D8D8D8;
+}
+#modal-tags-wrapper {
+  position: absolute;
+  width: 82%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.modal-tag {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+}
+.tag-icon,
+.tag-icon-light {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  margin-top: 8px;
+}
+.modal-tag:hover {
+  background-color: #DC6666
+}
+.modal-tag:hover .tag-icon,
+.tag-icon-light {
+  display: none;
+}
+.modal-tag:hover .tag-icon-light {
+  display: block
+}
+.modal-tag#tag-1 {
+top: -50px;
+left: 20px;
+}
+.modal-tag#tag-2 {
+  top: 25px;
+  right: 300px;
+}
+.modal-tag#tag-3 {
+  top: 115px;
+  left: 190px;
+}
+.modal-tag#tag-4 {
+  top: 125px;
+  right: 0px;
+}
+.modal-tag#tag-5 {
+  top: 265px;
+  left: 105px;
+}
+@media (min-width: 900px) {
+  .modal-tag#tag-1 {
+    top: 0;
+    left: 110px;
+  }
+  .modal {
+    top: -120%;
+  }
+ }
